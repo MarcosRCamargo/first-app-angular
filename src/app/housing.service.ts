@@ -6,7 +6,7 @@ import { HousingLocation } from './housinglocation';
 })
 export class HousingService {
   readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
-
+  
   housingLocationList: HousingLocation[] = [
     {
       id: 0,
@@ -109,6 +109,7 @@ export class HousingService {
       laundry: true
     }
   ];
+  constructor() { }
   getAllHousingLocations(): HousingLocation[] {
     return this.housingLocationList;
   }
@@ -116,5 +117,4 @@ export class HousingService {
   getHousingLocationById(id: number): HousingLocation | undefined {
     return this.housingLocationList.find(housingLocation => housingLocation.id === id);
   }
-  constructor() { }
 }
