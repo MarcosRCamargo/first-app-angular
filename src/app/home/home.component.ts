@@ -9,9 +9,7 @@ import { HousingService } from '../housing.service';
   standalone: true,
   imports: [
     CommonModule,
-    HousingLocationComponent,
-    HousingLocation,
-    HousingService
+    HousingLocationComponent
   ],
   template: `
     <section>
