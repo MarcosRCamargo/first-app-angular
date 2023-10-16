@@ -6,7 +6,7 @@ import { HousingLocation } from './housinglocation';
 })
 export class HousingService {
   
-  url = 'https://fluffy-space-tribble-pjwrx6vvg7wf69qv-3000.app.github.dev/locations';
+  url = 'http://localhost:3000/locations';
 
   constructor() { }
   async getAllHousingLocations(): Promise<HousingLocation[]> {
