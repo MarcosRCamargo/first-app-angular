@@ -14,11 +14,12 @@ import { HousingService } from '../housing.service';
   template: `
     <section>
       <form>
-      <input type="text" placeholder="Filter by city" #filter>
-      <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
+      <input type="text" placeholder="Filtrar por cidade" #filter>
+      <button class="primary" type="button" (click)="filterResults(filter.value)">Procurar</button>
       </form>
     </section>
     <section class="results">
+    
     <app-housing-location *ngFor="let housingLocation of filteredLocationList" [housingLocation]="housingLocation"></app-housing-location>
     </section>`,
   styleUrls: ['./home.component.css'],
